@@ -1,0 +1,132 @@
+:root {
+  --main-color: #6b291d;
+  --secondary-color: #fef5f0;
+  /* --section-padding: 60px; */
+  --section-background: #fef5f0;
+  --main-duration: 0.5s;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  direction: rtl;
+  background-color: var(--section-background);
+}
+.header {
+  padding-bottom: 30px;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header .mainTitle {
+  color: var(--main-color);
+}
+.header ul li a {
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 6px 6px;
+  transition: var(--main-duration);
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.header ul li a:hover {
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+}
+.header ul li a.active {
+  color: var(--secondary-color) !important;
+  background-color: var(--main-color);
+}
+.headerContent {
+  position: relative;
+}
+.headerContent::after {
+  content: "";
+  width: 80%;
+  height: 2.5px;
+  position: absolute;
+  background-color: var(--main-color);
+  top: 115%;
+  left: 10%;
+}
+/*  */
+.date {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--main-color);
+  padding: 5px 15px;
+  border: 2px dotted var(--main-color);
+  -webkit-box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+  box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+  /* min-width: 400px; */
+  max-width: 400px;
+}
+.countrySpan,
+.citySpan {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.countryForm,
+.cityForm {
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  border-radius: 6px 6px;
+  padding: 5px;
+  font-weight: 600;
+  -webkit-box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+  box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+}
+@media (max-width: 991px) {
+  .wdf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.elmawaket .card {
+  border-radius: 20px 20px;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  -webkit-box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+  box-shadow: -5px 5px 10px 0.5px rgba(0, 0, 0, 0.27);
+}
+.elmawaket .card .prayName {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.elmawaket .card .prayName::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+.elmawaket .card .prayTime {
+  font-weight: 600;
+}
+.elmawaket .card .prayTime .prayTimeText {
+  font-size: 20px;
+}

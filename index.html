@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/master.css" />
+    <title>مواقيت الصلاة</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header" style="background-color: transparent">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container headerContent">
+          <h3 class="navbar-brand headerTitle fs-1 mainTitle">مواقيت الصلاة</h3>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-2" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >مواقيت الصلاة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/indexQuran.html"
+                  >القرآن الكريم</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">اتصل بنا</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--  -->
+    <!-- mawaketContent -->
+    <div class="mawaketContent">
+      <div class="container">
+        <div class="cityAData row">
+          <div class="tare5 col-lg-6 col-12">
+            <p class="date">
+              اليوم : <span class="dayName"></span>
+              <span class="dayNum"></span> <span class="month"></span>
+              <span class="year"></span><br />
+              <span class="coolText"
+                >مواقيت الصلاة في محافظة <span class="elmohafza"></span> في دولة
+                <span class="dawla"></span> هي :-</span
+              >
+            </p>
+          </div>
+          <div class="setCityACounty col-lg-6 col-12">
+            <div class="country">
+              <label class="wdf mb-2" for>
+                <span class="countrySpan">اختر الدولة :</span>
+                <select class="countryForm" name id></select>
+              </label>
+            </div>
+            <div class="city">
+              <label for class="wdf">
+                <span class="citySpan">اختر المحافظة :</span>
+                <select class="cityForm" name id></select>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elmawaket d-lg-flex justify-content-center flex-lg-direction-row flex-direction-column text-center p-1"
+        >
+          <div class="card p-3 mt-2 m-2">
+            <div class="prayName">الفجر</div>
+            <div class="prayTime">
+              الساعة : <span class="prayTimeText fajr"> 00:00 </span>
+              <hr />
+              صباحا
+            </div>
+          </div>
+          <div class="card p-3 mt-2 m-2">
+            <div class="prayName">الشروق</div>
+            <div class="prayTime">
+              الساعة : <span class="prayTimeText sunrise"> 00:00 </span>
+              <hr />
+              صباحا
+            </div>
+          </div>
+          <div class="card p-3 mt-2 m-2">
+            <div class="prayName">الظهر</div>
+            <div class="prayTime">
+              الساعة : <span class="prayTimeText zohr"> 00:00 </span>
+              <hr />
+              صباحا
+            </div>
+          </div>
+          <div class="card p-3 mt-2 m-2">
+            <div class="prayName">العصر</div>
+            <div class="prayTime">
+              الساعة : <span class="prayTimeText asr"> 00:00 </span>
+              <hr />
+              صباحا
+            </div>
+          </div>
+          <div class="card p-3 mt-2 m-2">
+            <div class="prayName">المغرب</div>
+            <div class="prayTime">
+              الساعة : <span class="prayTimeText sunset">00:00 </span>
+              <hr />
+              صباحا
+            </div>
+          </div>
+          <div class="card p-3 mt-2 m-2">
+            <div class="prayName">العشاء</div>
+            <div class="prayTime">
+              الساعة : <span class="prayTimeText ishaa">00:00 </span>
+              <hr />
+              صباحا
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
